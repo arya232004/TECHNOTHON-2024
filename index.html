@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel=stylesheet>
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext"
+        rel=stylesheet>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Technothon 2024</title>
 </head>
 
@@ -39,27 +41,27 @@
     </div>
 
     <div class="container">
-        <br><br>
-    <!-- About us -->
-    
-        <div class="content text-center">
-            <span class="title">About Technothon 2024 ✨</span>
-        </div>
-        <br>
-        <p class="text">Welcome to Technothon 2024 - A 24-hours Hackathon exclusively for Polytechnic Students. Building
-            on the success of our inaugural event in 2023, Technothon continues to be the epicenter of innovation for
-            the engineering community across Mumbai.
-        </p>
-        <p class="text">In 2023, we witnessed remarkable creativity and problem-solving skills during our 24-hour
-            nonstop hackathon. The overwhelming response fueled our commitment to providing an even more exhilarating
-            experience in 2024.</p>
-        <p class="text text-center">At Technothon, our aim is to provide a platform for students across the city to
-            inculcate invaluable skills in product development. By building projects from scratch and competing with
-            fellow mates, participants identify and hone their innovation and problem-solving skills.
-        </p>
 
-        <br><br>
-        <div class="container mt-4 text-center">
+        <!-- About us -->
+        <section id="about" class="my-5">
+            <div class="content text-center">
+                <span class="title">About Technothon 2024 ✨</span>
+            </div>
+            <br>
+            <p class="text">Welcome to Technothon 2024 - A 24-hours Hackathon exclusively for Polytechnic Students.
+                Building
+                on the success of our inaugural event in 2023, Technothon continues to be the epicenter of innovation
+                for
+                the engineering community across Mumbai.
+            </p>
+            <p class="text">In 2023, we witnessed remarkable creativity and problem-solving skills during our 24-hour
+                nonstop hackathon. The overwhelming response fueled our commitment to providing an even more
+                exhilarating
+                experience in 2024.</p>
+            <p class="text text-center">At Technothon, our aim is to provide a platform for students across the city to
+                inculcate invaluable skills in product development. By building projects from scratch and competing with
+                fellow mates, participants identify and hone their innovation and problem-solving skills.
+            </p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -91,130 +93,303 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="button-container d-flex justify-content-center ">
-            <button class="mycustom-button">
-                <img src="assets/sign-up.png" alt="Image" height="40px">Register Now
-            </button>
-            <button class="mycustom-button">
-                <img src="assets/whatsapp.png" alt="Image" height="40px"> Join Whatsapp Group
-            </button>
-        </div>
-        
-        <br><br>
-
-        <!-- image -->
-        <div>
-            <link href="./frame14372.css" rel="stylesheet" />
-            <div class="frame14372-container">
-                <div class="frame14372-group2">
-                    
-                    <div class="frame14372-frame32">
-                        <span class="frame14372-text"><span>7 step Process</span></span>
-                    </div>
-                </div>
+            <div class="button-container d-flex justify-content-center ">
+                <button class="mycustom-button">
+                    <img src="assets/sign-up.png" alt="Image" height="40px">Register Now
+                </button>
+                <button class="mycustom-button">
+                    <img src="assets/whatsapp.png" alt="Image" height="40px"> Join Whatsapp Group
+                </button>
             </div>
-        </div>
-    
+        </section>
+
         <!-- Steps list -->
-        <div class="container">
-            <div class="text">At Technothon 2024, we've streamlined the journey from ideation to implementation with our
-                7-step process. This structured approach ensures a seamless and rewarding experience for all participants:
+        <section id="process" class="my-5 steps">
+            <div class="d-flex justify-content-center">
+                <img src="images/clapperboard.png" alt="7 step process clapperboard" class="process-img">
             </div>
             <br>
-            <div class="custom-component container">
-                <div class="line-container">
-                    <div class="text">Team Formation</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse2">
-                    <div class="card card-body">
-                        Collaborate and form your team, laying the foundation for a strong and diverse group.
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            1. Team Formation
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Collaborate and form your team, laying the foundation for a strong
+                            and diverse group.<div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <hr class="custom-hr">
 
-                <!-- Repeat the above structure for each line -->
-                <!-- Example for Text Line 2 -->
-                <div class="line-container">
-                    <div class="text">Brainstorming & Problem Statement Selection</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse1">
-                    <div class="card card-body">
-                        Engage in brainstorming sessions to select a challenge aligned with your team's strengths and
-                        interests.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            2. Brainstorming & Problem Statement Selection
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Engage in brainstorming sessions to select a challenge
+                            aligned with your team's strengths and interests.</div>
                     </div>
                 </div>
-                <hr>
-                <div class="line-container">
-                    <div class="text">Registration & Idea Submission</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse3">
-                    <div class="card card-body">
-                        Register your team using the provided registration form and submit your innovative idea. Let your
-                        creativity shine through in a presentation format, using the template provided.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            3. Registration & Idea Submission
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Register your team using the provided registration form and
+                            submit your innovative idea. Let your creativity shine through in a presentation
+                            format, using the template provided.</div>
                     </div>
                 </div>
-                <hr>
-                <div class="line-container">
-                    <div class="text">Shortlisting Contender</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse4">
-                    <div class="card card-body">
-                        Teams with the most promising ideas move forward to the Grand Finale, a real-time testing ground for
-                        their innovative solutions.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            4. Shortlisting Contenders
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Teams with the most promising ideas move forward to the
+                            Grand Finale, a real-time testing ground for their innovative solutions.</div>
                     </div>
                 </div>
-                <hr>
-                <div class="line-container">
-                    <div class="text">The Grand Finale - 24 hours Hackathon</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse5">
-                    <div class="card card-body">
-                        Immerse yourself in the electrifying atmosphere of a 24-hour live hackathon. Collaborate, code, and
-                        bring your idea to life.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            5. The Grand Finale - 24 hours Hackathon
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Immerse yourself in the electrifying atmosphere of a 24-hour
+                            live hackathon. Collaborate, code, and bring your idea to life.</div>
                     </div>
                 </div>
-                <hr>
-                <div class="line-container">
-                    <div class="text">Project Presentation</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse6">
-                    <div class="card card-body">
-                        Showcase your implementation to our esteemed judges. Demonstrate the productiveness of your concept
-                        and the impact it can make.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            6. Project Presentation
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Showcase your implementation to our esteemed judges.
+                            Demonstrate the productiveness of your concept and the impact it can make.</div>
                     </div>
                 </div>
-                <hr>
-                <div class="line-container">
-                    <div class="text">Winner Declaration</div>
-                    <button class="plus-button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse1">+</button>
-                </div>
-                <div class="collapse collapse-content" id="collapse7">
-                    <div class="card card-body">
-                        The moment of triumph arrives as winners are announced. Efforts are recognized with prize money and
-                        a sense of accomplishment at the closing ceremony.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            7. Winner Declaration
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The moment of triumph arrives as winners are announced.
+                            Efforts are recognized with prize money and a sense of accomplishment at the closing
+                            ceremony.</div>
                     </div>
                 </div>
-                <hr>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="my-5">
+            <div class="content text-center">
+                <span class="title">Frequently Asked Questions</span>
             </div>
-            <br>
-            <div class="text">Navigate this process with determination, innovation, and teamwork. Your journey at Technothon
-                2024 is not just about coding; it's about turning ideas into impactful solutions</div>
-    
-        </div>
+            <div class="accordion faqsection p-4 my-3" id="myAccordion">
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed faq-accordion1"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne">What will be the mode of
+                            Technothon 2024?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>Technothon 2024 will be conducted in an offline format. The event will be hosted
+                                offline at
+                                V.E.S. Polytechnic College. Please refer to the Reach Us section for the address.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button collapsed faq-accordion2"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo">Who is the organizer of
+                            Technothon 2024?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>Technothon 2024 is organized by Vivekanand Education Society’s Polytechnic in
+                                association with VESP Alumni Association and IIC Cell.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed faq-accordion3"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree">Do I need to pay any
+                            registration fees?</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>No, there are no registration fees. You just need to come with your innovation; your
+                                accommodation and food during the 24-hours are all on us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button type="button" class="accordion-button collapsed faq-accordion1"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour">How do we form a team?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>All team members should be from the same college; no inter-college teams are allowed.
+                                The team should be of four members and should include a minimum of one female
+                                member.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button type="button" class="accordion-button collapsed faq-accordion2"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive">Will I be getting travel
+                            reimbursement?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>We regret to inform you that we won't be providing travel reimbursement. We would be
+                                happy to provide food and accommodation during the 24-hour grand finale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button type="button" class="accordion-button collapsed faq-accordion3"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix">Will I get anything even if I
+                            don’t win?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>Yes, all the participants get an E-Participation Certificate along with learning
+                                experience to compete in a hackathon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button type="button" class="accordion-button collapsed faq-accordion1"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSeven">What happens to the solutions
+                            developed by the winning team?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>Solutions, whether hardware or software, prepared by the winning team will be owned
+                                by the organizers. This ownership ensures collaboration and opens up opportunities
+                                for further development beyond the challenge. The organizers may explore avenues for
+                                implementation, refinement, or integration into existing systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item faq-accordion my-4">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button type="button" class="accordion-button collapsed faq-accordion2"
+                            data-bs-toggle="collapse" data-bs-target="#collapseEight">Can the winning team retain
+                            any rights to their
+                            solution
+                            after the challenge?</button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="accordion-body">
+                            <p>The organizers will retain ownership of the winning team's solutions. However, the
+                                organizers may discuss collaboration opportunities and potential future involvement
+                                of the winning team in the development or implementation process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                If you have any specific queries not covered here, feel free to reach out to us!
+
+            </div>
+        </section>
+
+        <!-- Reach us -->
+        <section id="reach-us" class="my-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 my-sm-3">
+                    <div class="row justify-content-center">
+                        <img src="images/tiffin-man.png" alt="Reach us" class="img-fluid">
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-4 d-flex justify-content-center">
+                            <div class="circle-icon">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <div class="circle-icon">
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <div class="circle-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center my-2">
+                        <div class="email">
+                            <i class="fa fa-envelope"></i> Email
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 my-sm-3 text-center">
+                    <h2 class="title">Reach us</h2>
+                    <iframe class="w-100" height="450"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3651853836823!2d72.88731921469704!3d19.047674987104106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8ae58bb477b%3A0xe6b0dae75f20c296!2sVivekanand%20Education%20Society&#39;s%20Polytechnic%20College!5e0!3m2!1sen!2sin!4v1680168879342!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
     </div>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
     <script>
         var menu = document.querySelector(".menu"),
