@@ -437,11 +437,12 @@ function renderProblems() {
     problemStatements.forEach((problem) => {
         const problemCardHolder = document.createElement('div');
         problemCardHolder.classList.add('col-lg-3', 'col-md-6', 'col-sm-12', 'my-1');
+        problemCardHolder.setAttribute('data-aos', 'flip-left');
         problemCardHolder.innerHTML = `
         <div class="card" id="${problem.id}">
             <div class="card-body text-center">
                 <div class="mt-3 mb-4">
-                    <img src="${problem.icon_path}" alt="${problem.tisvg}"
+                    <img src="${problem.icon_path}" alt="${problem.title}"
                         class="rounded-circle img-fluid" />
                 </div>
                 <h5 class="mb-2">
