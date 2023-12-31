@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="assets/image-7.png" type="image/x-icon"> <!-- Add this line for favicon -->
+    <title>Intro nd 7steps</title>
+    <style>
+        .bg {
+    background-image: url("assets/desktop-5-bg.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }  
+  .container {
+    max-width: 99vw;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: auto;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    color: #0D0E2F;
+    font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1.28px;
+    word-wrap: break-word;
+  }
+
+  .content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  .text{
+    font-weight: 550;
+  }
+  .image-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card {
+    background-color: #0D0E2F;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    margin-bottom: 1rem;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .mycustom-button {
+    width: 40%;
+    background-color: #0D0E2F;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    /* margin: 10px; */
+    cursor: pointer;
+    margin:10px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    /* z-index: -1; */
+  }
+  #image-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 90vh;
+  }
+
+  #image-container img {
+    display: block;
+    max-width: 80%;
+    max-height: 30vh;
+    width: 550px;
+    height: auto;
+    left: 50%;
+  }
+
+  #overlay-text {
+    position: absolute;
+    top: 55%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(9, 0, 133);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .frame14372-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+  .frame14372-group2 {
+    width: 400px;
+    height: 266.3043518066406px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .frame14372-whats-app-image20231226at13001 {
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 266px;
+    position: absolute;
+  }
+  .frame14372-frame32 {
+    top: 96.87210845947266px;
+    left: 125px;
+    width: 184.05984497070312px;
+    height: 104.07393646240234px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .frame14372-text {
+    top: 16.770017623901367px;
+    left: 8.324400901794434px;
+    color: rgba(13, 14, 47, 1);
+    width: 166px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    font-style: Black;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 900;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-md-12 bg">
+                <div class="overlay">
+                    <h3 class="text-center" style="color: #f8fadf;">TECHNOTHON</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <span class="title">About Technothon 2024 ✨</span>
+          </div>
+        <br>
+        <p class="text">Welcome to Technothon 2024 - A 24-hours Hackathon exclusively for Polytechnic Students. Building on the success of our inaugural event in 2023, Technothon continues to be the epicenter of innovation for the engineering community across Mumbai.
+        </p>
+        <p class="text">In 2023, we witnessed remarkable creativity and problem-solving skills during our 24-hour nonstop hackathon. The overwhelming response fueled our commitment to providing an even more exhilarating experience in 2024.</p>
+        <p class="text text-centre">At Technothon, our aim is to provide a platform for students across the city to inculcate invaluable skills in product development. By building projects from scratch and competing with fellow mates, participants identify and hone their innovation and problem-solving skills.
+        </p>
+      </div>
+
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Idea Submission</h5>
+                <hr class="bg-white">
+                <p class="card-text">15th January 2024</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Theme</h5>
+                <hr class="bg-white">
+                <p class="card-text">The city of innovation</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">#Let's Innovate</h5>
+                <hr class="bg-white">
+                <p class="card-text">15 January 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="mycustom-button">
+          <img src="assets/sign-up.png" alt="Image" height="40px">Register Now
+        </button>
+        <button class="mycustom-button">
+          <img src="assets/whatsapp.png" alt="Image" height="40px"> Join Whatsapp Group
+        </button>
+      </div>
+      <!-- image -->
+      <div>
+        <link href="./frame14372.css" rel="stylesheet" />
+        <div class="frame14372-container">
+            <div class="frame14372-group2">
+              <img
+                src="assets/clapboard.png"
+                alt="WhatsAppImage20231226at130011389"
+                class="frame14372-whats-app-image20231226at13001"
+              />
+              <div class="frame14372-frame32">
+                <span class="frame14372-text"><span>7 step Process</span></span>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Steps list -->
+      <div class="container">
+        <div class="text">At Technothon 2024, we've streamlined the journey from ideation to implementation with our 7-step process. This structured approach ensures a seamless and rewarding experience for all participants:
+        </div>
+        <br>
+      <div class="custom-component container">
+        <div class="line-container">
+          <div class="text">Team Formation</div>
+          <button class="plus-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse1">+</button>
+        </div>
+        <div class="collapse collapse-content" id="collapse2">
+          <div class="card card-body">
+            Collaborate and form your team, laying the foundation for a strong and diverse group.
+          </div>
+        </div>
+        <hr class="custom-hr">
+        
+          <!-- Repeat the above structure for each line -->
+          <!-- Example for Text Line 2 -->
+          <div class="line-container">
+            <div class="text">Brainstorming & Problem Statement Selection</div>
+            <button class="plus-button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">+</button>
+          </div>
+          <div class="collapse collapse-content" id="collapse1">
+            <div class="card card-body">
+              Engage in brainstorming sessions to select a challenge aligned with your team's strengths and interests. 
+            </div>
+          </div>
+          <hr>
+          <div class="line-container">
+            <div class="text">Registration & Idea Submission</div>
+            <button class="plus-button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse1">+</button>
+          </div>
+          <div class="collapse collapse-content" id="collapse3">
+            <div class="card card-body">
+              Register your team using the provided registration form and submit your innovative idea. Let your creativity shine through in a presentation format, using the template provided.
+            </div>
+          </div>
+          <hr>
+          <div class="line-container">
+            <div class="text">Shortlisting Contender</div>
+            <button class="plus-button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse1">+</button>
+          </div>
+          <div class="collapse collapse-content" id="collapse4">
+            <div class="card card-body">
+              Teams with the most promising ideas move forward to the Grand Finale, a real-time testing ground for their innovative solutions.
+            </div>
+          </div>
+          <hr>
+          <div class="line-container">
+            <div class="text">The Grand Finale - 24 hours Hackathon</div>
+            <button class="plus-button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse1">+</button>
+          </div>
+          <div class="collapse collapse-content" id="collapse5">
+            <div class="card card-body">
+              Immerse yourself in the electrifying atmosphere of a 24-hour live hackathon. Collaborate, code, and bring your idea to life.
+            </div>
+          </div>
+          <hr>
+          <div class="line-container">
+            <div class="text">Project Presentation</div>
+            <button class="plus-button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse1">+</button>
+          </div>
+          <div class="collapse collapse-content" id="collapse6">
+            <div class="card card-body">
+              Showcase your implementation to our esteemed judges. Demonstrate the productiveness of your concept and the impact it can make.
+            </div>
+          </div>
+          <hr>
+          <div class="line-container">
+            <div class="text">Winner Declaration</div>
+            <button class="plus-button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse1">+</button>
+          </div>
+          <div class="collapse collapse-content" id="collapse7">
+            <div class="card card-body">
+              The moment of triumph arrives as winners are announced. Efforts are recognized with prize money and a sense of accomplishment at the closing ceremony.
+            </div>
+          </div>
+          <hr>        
+        </div>
+        <br>
+        <div class="text">Navigate this process with determination, innovation, and teamwork. Your journey at Technothon 2024 is not just about coding; it's about turning ideas into impactful solutions</div>
+
+        </div>
+</body>
+</html>
