@@ -9,6 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext"
         rel=stylesheet>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +20,6 @@
 </head>
 
 <body>
-
     <!-- Sidebar -->
     <nav role="navigation">
         <div class="menu-toggle"><span>Menu</span></div>
@@ -37,11 +39,18 @@
     <!-- landing page -->
     <div class="hero">
         <div class="overlay"></div>
+        <div class="top-left">
+            <div class="logo">
+                <img src="images/vespaa.png" alt="ves_logo" height="60px">
+                <img src="images/iic-white.png" alt="iic_white" height="60px">
+                <img src="images/vesp-white.png" alt="vesp_logo" height="60px">
+            </div>
+
+        </div>
         <div class="centered">TECHNOTHON <br> 2024</div>
     </div>
 
     <div class="container">
-
         <!-- About us -->
         <section id="about" class="my-5">
             <div class="content text-center">
@@ -64,7 +73,7 @@
             </p>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #0D0E2F;">
                         <div class="card-body">
                             <h5 class="card-title">Idea Submission</h5>
                             <hr class="bg-white">
@@ -74,7 +83,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #0D0E2F;">
                         <div class="card-body">
                             <h5 class="card-title">Theme</h5>
                             <hr class="bg-white">
@@ -84,7 +93,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #0D0E2F;">
                         <div class="card-body">
                             <h5 class="card-title">#Let's Innovate</h5>
                             <hr class="bg-white">
@@ -212,6 +221,125 @@
                 </div>
         </section>
 
+        <!-- Problem Statements -->
+        <section id="problem-statements" class="my-5">
+            <div class="content text-center">
+                <span class="title">Problem Statements</span>
+            </div>
+            <div class="cards">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mt-3 mb-4">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                        class="rounded-circle img-fluid" />
+                                </div>
+                                <h3 class="mb-2">Some problem statement</h4>
+                                    <p class="mb-4 h6">PS-01</p>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        View details
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mt-3 mb-4">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                        class="rounded-circle img-fluid" />
+                                </div>
+                                <h3 class="mb-2">Some problem statement</h4>
+                                    <p class="mb-4 h6">PS-02</p>
+                                    <button type="button" class="btn btn-light">
+                                        View details
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mt-3 mb-4">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                        class="rounded-circle img-fluid" />
+                                </div>
+                                <h3 class="mb-2">Some problem statement</h4>
+                                    <p class="mb-4 h6">PS-03</p>
+                                    <button type="button" class="btn btn-light">
+                                        View details
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prizes -->
+    <section id="prizes" class="my-5">
+        <div class=" text-center prizes-section">
+            <br>
+            <span class="title" style="color: white;">Exciting Prize Awaits 🏅</span>
+            <div style="color: white; margin-top: 30px;">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 text-center px-5">
+                        <h3>Exciting Prize Awaits</h2>
+                            <p>Wondering how the prizing goes? Well, Winning team of each Problem Statement can get upto
+                                10,000/- on cracking the problem with your innovation</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Open Innovation</h2>
+                            <p>Identify the problem and get a solution, all on your OWN! The best innovating team, grabs
+                                the winning spot!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="images/Prize1.gif" class="mw-100 w-auto" alt="1st prize Rs10,000">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="images/Prize2.gif" class="mw-100 w-auto" alt="2nd prize Rs6,000">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="images/Prize3.gif" class="mw-100 w-auto" alt="3rd prize Rs4,000">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="images/trophy.png" class="mw-100 w-auto" alt="trophy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
         <!-- FAQ -->
         <section id="faq" class="my-5">
             <div class="content text-center">
@@ -355,19 +483,28 @@
                     </div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-4 d-flex justify-content-center">
-                            <div class="circle-icon">
-                                <i class="fa fa-facebook"></i>
-                            </div>
+                            <a href="https://www.instagram.com/vespolytechnic_0004/" class="social-link"
+                                target="_blank">
+                                <div class="circle-icon">
+                                    <i class="fa fa-instagram"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-4 d-flex justify-content-center">
-                            <div class="circle-icon">
-                                <i class="fa fa-instagram"></i>
-                            </div>
+                            <a href="https://www.facebook.com/people/VESP-Diploma-Engineering/100063678624978/"
+                                class="social-link" target="_blank">
+                                <div class="circle-icon">
+                                    <i class="fa fa-facebook"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-4 d-flex justify-content-center">
-                            <div class="circle-icon">
-                                <i class="fa fa-linkedin"></i>
-                            </div>
+                            <a href="https://www.linkedin.com/school/ves-polytechnic/" class="social-link"
+                                target="_blank">
+                                <div class="circle-icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center my-2">

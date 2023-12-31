@@ -15,7 +15,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: NotoSans;
+  font-family: 'Londrina Outline', sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2em;
 }
 
 .hero>.overlay {
@@ -36,6 +40,12 @@ nav {
   z-index: 1;
   width: 100%;
   position: absolute;
+}
+
+.top-left {
+  position: absolute;
+  top: 18px;
+  left: 26px;
 }
 
 nav .menu {
@@ -270,6 +280,10 @@ nav .menu li a:active {
   height: inherit;
 }
 
+.social-link {
+  text-decoration: none;
+}
+
 .circle-icon {
   display: flex;
   width: 70px;
@@ -344,4 +358,38 @@ nav .menu li a:active {
 .faq-accordion3,
 .faq-accordion:nth-of-type(3n+3) {
   background-color: #f2c7df !important;
+}
+
+/* Problem statement cards */
+.card {
+  border-radius: 15px;
+  border: 1px solid #aaaaaa;
+  box-shadow: 0px 0px 10px 0px #aaaaaa;
+  background-color: #0D0E2FCC;
+}
+
+/* Prize */
+.prizes-section {
+  background-color: #0d0e2f;
+  color: white;
+  padding: 20px;
+}
+
+.prizes-section h2{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.prizes-section p{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 640px) {
+  .centered {
+    font-size: 2.4rem;
+  }
+    
 }
