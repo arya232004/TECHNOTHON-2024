@@ -369,14 +369,69 @@ nav .menu li a:active {
   padding: 20px;
 }
 
-.prizes-section h2{
+.prizes-section h2 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.prizes-section p{
+.prizes-section p {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/* Guidelines */
+.custom-accordion {
+  color: #00214D;
+  padding-bottom: 2rem;
+}
+
+.custom-accordion>.item {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.custom-accordion>.item:last-of-type {
+  background: #0d0e2f;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+.custom-accordion>.item:last-of-type>.icon {
+  color: #fff;
+}
+
+.custom-accordion>.item:nth-of-type(6) {
+  padding-bottom: 2rem;
+}
+
+.custom-accordion>.item>.icon {
+  color: #00214D;
+  font-size: 2rem;
+}
+
+.custom-accordion>.item>.title {
+  font-size: 2rem;
+}
+
+.custom-accordion>.item:nth-child(1) {
+  background-color: #FFFFFE
+}
+
+.custom-accordion>.item:nth-child(2) {
+  background-color: #FAEDCB
+}
+
+.custom-accordion>.item:nth-child(3) {
+  background-color: #F2C6DE
+}
+
+.custom-accordion>.item:nth-child(4) {
+  background-color: #C6DEF1
+}
+
+.custom-accordion>.item:nth-child(5) {
+  background-color: #C3C5FF80
 }
 
 /* Media queries */
@@ -396,5 +451,135 @@ nav .menu li a:active {
 @media screen and (max-width: 640px) {
   .centered {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 540px) {
+  .custom-accordion {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90vh;
+    max-height: 1000px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  .custom-accordion>.item {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    transform-origin: 0 50%;
+    transition: all .3s cubic-bezier(.8, .16, .42, .89);
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type) {
+    transform: scaleX(2) translateX(-1px);
+    box-shadow: 0 0 3rem #301916;
+    border-color: transparent;
+  }
+
+  .custom-accordion>.item:hover+.item {
+    opacity: 0
+  }
+
+  .custom-accordion>.item:hover+.item:last-of-type {
+    opacity: 0;
+  }
+
+
+  .custom-accordion>.item:not(:last-of-type) {
+    border-right: 1px solid #00214D;
+  }
+
+  .custom-accordion>.item:last-of-type {
+    background: #00214D;
+    width: 25%;
+    border-radius: 0;
+  }
+
+  .custom-accordion>.item:last-of-type .heart-icon {
+    font-size: 6rem;
+    color: #fff;
+    transition: all .3s cubic-bezier(.8, .16, .42, .89);
+  }
+
+  .custom-accordion>.item:hover:last-of-type .heart-icon {
+    transform: scale(2);
+  }
+
+  .custom-accordion>.item:last-of-type>.title {
+    transform: rotate(0) translateX(-50%) translateY(-2.5rem);
+    padding: 0;
+    text-align: center;
+  }
+
+  .custom-accordion>.item:last-of-type>.content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.icon {
+    transform: scaleX(.5);
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.title {
+    transform: scaleX(.5) translateX(-50%);
+    background: #CA2E55;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.title>.text {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.content {
+    opacity: 1;
+  }
+
+  .custom-accordion>.item>.icon {
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all .3s cubic-bezier(.8, .16, .42, .89);
+    color: #00214D;
+  }
+
+  .custom-accordion>.item>.title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1.5rem;
+    width: 200%;
+    text-align: left;
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    transition: all .3s cubic-bezier(.8, .16, .42, .89);
+    font-size: 1.2rem;
+  }
+
+  .custom-accordion>.item>.title>.text {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    white-space: nowrap;
+    transition: all .3s cubic-bezier(.8, .16, .42, .89);
+  }
+
+  .custom-accordion>.item>.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%) scaleX(.5);
+    transition: all .3s cubic-bezier(.8, .16, .42, .89);
+    opacity: 0;
+    padding: 1rem;
+    pointer-events: none;
   }
 }
