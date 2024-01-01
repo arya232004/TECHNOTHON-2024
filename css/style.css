@@ -265,6 +265,11 @@ nav .menu li a:active {
   height: 15rem;
 }
 
+.timeline-img {
+  width: 10rem;
+  height: 10rem;
+}
+
 .img-fluid {
   width: 40%;
   height: inherit;
@@ -377,6 +382,46 @@ nav .menu li a:active {
 .prizes-section p {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/* Timeline */
+.m-ind-card {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.timeline {
+  height: 150px;
+  width: auto;
+}
+
+.step {
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -25px;
+  right: -30px;
+  border-radius: 10px;
+  width: 100px;
+  height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .step {
+    top: -35px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.step p {
+  margin: 10px;
+  padding: 0;
 }
 
 /* Guidelines */
